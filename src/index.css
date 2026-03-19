@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Montserrat:wght@500;600;700;800&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 210 40% 98%;
+    --foreground: 222 47% 11%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 222 47% 11%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 222 47% 11%;
+
+    --primary: 224 76% 33%;
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 210 40% 96%;
+    --secondary-foreground: 222 47% 11%;
+
+    --muted: 210 40% 96%;
+    --muted-foreground: 215 16% 47%;
+
+    --accent: 48 97% 54%;
+    --accent-foreground: 222 47% 11%;
+
+    --destructive: 350 89% 60%;
+    --destructive-foreground: 0 0% 100%;
+
+    --success: 160 84% 39%;
+    --success-foreground: 0 0% 100%;
+
+    --warning: 38 92% 50%;
+    --warning-foreground: 0 0% 100%;
+
+    --info: 199 89% 48%;
+    --info-foreground: 0 0% 100%;
+
+    --border: 214 32% 91%;
+    --input: 214 32% 91%;
+    --ring: 224 76% 33%;
+
+    --radius: 0.5rem;
+
+    --sidebar-background: 224 76% 33%;
+    --sidebar-foreground: 210 40% 96%;
+    --sidebar-primary: 48 97% 54%;
+    --sidebar-primary-foreground: 222 47% 11%;
+    --sidebar-accent: 224 76% 28%;
+    --sidebar-accent-foreground: 0 0% 100%;
+    --sidebar-border: 224 76% 28%;
+    --sidebar-ring: 48 97% 54%;
+
+    --font-display: 'Montserrat', sans-serif;
+    --font-body: 'Inter', sans-serif;
+
+    --chart-1: 224 76% 33%;
+    --chart-2: 160 84% 39%;
+    --chart-3: 48 97% 54%;
+    --chart-4: 199 89% 48%;
+    --chart-5: 350 89% 60%;
+  }
+
+  .dark {
+    --background: 222 47% 8%;
+    --foreground: 210 40% 96%;
+
+    --card: 222 47% 12%;
+    --card-foreground: 210 40% 96%;
+
+    --popover: 222 47% 12%;
+    --popover-foreground: 210 40% 96%;
+
+    --primary: 224 76% 48%;
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 222 47% 16%;
+    --secondary-foreground: 210 40% 96%;
+
+    --muted: 222 47% 16%;
+    --muted-foreground: 215 16% 57%;
+
+    --accent: 48 97% 54%;
+    --accent-foreground: 222 47% 11%;
+
+    --destructive: 350 89% 55%;
+    --destructive-foreground: 0 0% 100%;
+
+    --success: 160 84% 39%;
+    --success-foreground: 0 0% 100%;
+
+    --warning: 38 92% 50%;
+    --warning-foreground: 0 0% 100%;
+
+    --info: 199 89% 48%;
+    --info-foreground: 0 0% 100%;
+
+    --border: 222 47% 20%;
+    --input: 222 47% 20%;
+    --ring: 224 76% 48%;
+
+    --sidebar-background: 222 47% 10%;
+    --sidebar-foreground: 210 40% 90%;
+    --sidebar-primary: 48 97% 54%;
+    --sidebar-primary-foreground: 222 47% 11%;
+    --sidebar-accent: 222 47% 16%;
+    --sidebar-accent-foreground: 210 40% 96%;
+    --sidebar-border: 222 47% 16%;
+    --sidebar-ring: 48 97% 54%;
+
+    --chart-1: 224 76% 48%;
+    --chart-2: 160 84% 45%;
+    --chart-3: 48 97% 54%;
+    --chart-4: 199 89% 48%;
+    --chart-5: 350 89% 55%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+    font-family: var(--font-body);
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-display);
+  }
+}
+
+@layer utilities {
+  .scrollbar-thin {
+    scrollbar-width: thin;
+    scrollbar-color: hsl(var(--muted)) transparent;
+  }
+}
