@@ -21,7 +21,7 @@ The system provides a centralized platform for managing students, teachers, cour
 
 ## 🌍 Live Demo
 
-🔗 [https://your-live-link.vercel.app](https://your-live-link.vercel.app)
+🔗 https://motot-hub.lovable.app/
 
 ---
 
