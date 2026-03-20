@@ -17,6 +17,7 @@ import AuditPage from "./pages/AuditPage";
 import VerificationPage from "./pages/VerificationPage";
 import SettingsPage from "./pages/SettingsPage";
 import NotFound from "./pages/NotFound";
+import Portfolio from "./pages/Portfolio";
 
 const queryClient = new QueryClient();
 
