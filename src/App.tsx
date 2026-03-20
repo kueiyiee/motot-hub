@@ -41,6 +41,7 @@ const App = () => (
                 <Route path="/audit" element={<AuditPage />} />
                 <Route path="/verify" element={<VerificationPage />} />
                 <Route path="/settings" element={<SettingsPage />} />
+                <Route path="/portfolio" element={<Portfolio />} />
                 <Route path="*" element={<NotFound />} />
               </Routes>
             </BrowserRouter>
