@@ -17,6 +17,7 @@ import AuditPage from "./pages/AuditPage";
 import VerificationPage from "./pages/VerificationPage";
 import SettingsPage from "./pages/SettingsPage";
 import NotFound from "./pages/NotFound";
+import Portfolio from "./pages/Portfolio";
 
 const queryClient = new QueryClient();
 
@@ -40,6 +41,7 @@ const App = () => (
                 <Route path="/audit" element={<AuditPage />} />
                 <Route path="/verify" element={<VerificationPage />} />
                 <Route path="/settings" element={<SettingsPage />} />
+                <Route path="/portfolio" element={<Portfolio />} />
                 <Route path="*" element={<NotFound />} />
               </Routes>
             </BrowserRouter>
